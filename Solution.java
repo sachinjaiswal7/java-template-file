@@ -1,19 +1,19 @@
 import java.io.*;
+import java.util.*;
 public class Solution {
  static BufferedReader bf;
     public static void main(String[]args)throws IOException{
 
         bf = new BufferedReader(new InputStreamReader(System.in));
-        int[]arr = nextIntArray(10);
-        for(int i =0;i<arr.length;i++){
-            System.out.println(arr[i]);
+        int t = nextInt();
+        while(t-->0){
+           
 
         }
+      
 
    } 
-
-
-
+  
 
 
 
@@ -24,6 +24,10 @@ public class Solution {
 
 
    // code for input
+   public static String[] nextStringArray()throws IOException{
+       return  bf.readLine().split(" ");
+   }
+   
    public static int nextInt()throws IOException{
        return Integer.parseInt(bf.readLine());
    }
